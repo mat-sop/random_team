@@ -6,6 +6,7 @@ Discord bot to split players into random teams.
 `Python 3.7.*`
 
 ## Instalation
-```pip install pipenv
+```bash
+pip install pipenv
 pipenv install --dev --skip-lock
 ```
