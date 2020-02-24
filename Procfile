@@ -1,1 +1,1 @@
-worker: python random-team/bot.py
+worker: python random_team/bot.py
