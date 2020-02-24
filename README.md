@@ -3,7 +3,7 @@
 Discord bot to split players into random teams.
 
 ## Add bot to server
-`https://discordapp.com/api/oauth2/authorize?client_id=678602247709524024&permissions=2048&scope=bot`
+`https://discordapp.com/api/oauth2/authorize?client_id=678602247709524024&permissions=16779264&scope=bot`
 
 ## Usage
 ```
