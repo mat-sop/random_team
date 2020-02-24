@@ -39,7 +39,7 @@ class Random(commands.Cog):
         voice_channel = get_voice_channel(ctx, voice)
 
         if voice_channel:
-            await move_members(self.bot, teams[0], voice_channel)
+            await move_members(self.bot, teams[-1], voice_channel)
         names = [[m.name for m in team] for team in teams]
         await ctx.send(format_teams(names))
 
