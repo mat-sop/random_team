@@ -13,8 +13,8 @@ def generate_teams(members: List):
     teams = []
     random.shuffle(members)
     number_of_members = len(members)
-    teams.append(members[:number_of_members])
-    teams.append(members[number_of_members:])
+    teams.append(members[:number_of_members//2])
+    teams.append(members[number_of_members//2:])
     return teams
 
 
