@@ -1,5 +1,4 @@
 # random-team
-
 Discord bot to split players into random teams.
 
 ## Add bot to server
