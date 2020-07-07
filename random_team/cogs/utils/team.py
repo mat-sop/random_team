@@ -9,23 +9,9 @@ def filter_bots(members: List) -> List:
     return [member for member in members if not member.bot]
 
 
-def generate_teams(members: List):
-    teams = []
+def generate_teams(members: List, number_of_teams: int):
     random.shuffle(members)
-    number_of_members = len(members)
-    teams.append(members[:number_of_members//2])
-    teams.append(members[number_of_members//2:])
-    return teams
-
-
-def format_teams(teams: List[List[str]]) -> str:
-    output = ''
-    template ='Team {number}:\n  {members}\n\n'
-    i = 1
-    for team in teams:
-        output += template.format(number=i, members=', '.join(team))
-        i += 1
-    return output
+    return [list(team) for team in np.array_split(members, number_of_teams)]
 
 
 def get_channel_by_name(channels, name):
