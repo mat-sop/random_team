@@ -8,7 +8,7 @@ pylint = '*'
 mypy = '*'
 
 [packages]
-discord = '1.3'
+discord = '1.3.2'
 numpy = '*'
 
 [requires]
