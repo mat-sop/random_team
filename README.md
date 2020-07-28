@@ -1,5 +1,5 @@
 # random-team
-Discord bot to split players into random teams.
+Discord bot to split players into random teams. Hosted on heroku.
 
 ## Add bot to server
 `https://discordapp.com/api/oauth2/authorize?client_id=678602247709524024&permissions=16779264&scope=bot`
@@ -17,15 +17,17 @@ Type $rng help command for more info on a command.
 You can also type $rng help category for more info on a category.
 ```
 
-## Development
+## Development/Hosting
 
 ### Requirements
-`Python 3.7.*`
+`Python 3.8.3`
 
 ### Instalation
 ```bash
-pip install pipenv
-pipenv install --skip-lock
+python -m pip install -r requirements.txt
 ```
-### Usage
-`pipenv run python random-team/bot.py`
+### Run
+```bash
+export DISCORD_BOT_TOKEN="paste token here"
+python random_team/bot.py
+```
