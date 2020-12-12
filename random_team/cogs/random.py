@@ -18,9 +18,12 @@ class Random(commands.Cog):
             return
 
         members = filter_bots(ctx.author.voice.channel.members)
+        print(f'members : {members}')
 
         voice_channels = [get_voice_channel(ctx, voice_name) for voice_name in args]
+        print(f'voice_channels: {voice_channels}')
         teams = generate_teams(members, len(voice_channels))
+        print(f'teams: {teams}')
 
         text_output = ''
 
