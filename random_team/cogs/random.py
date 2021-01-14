@@ -29,7 +29,7 @@ class Random(commands.Cog):
 
         for team, voice_channel in zip(teams, voice_channels):
             await move_members(self.bot, team, voice_channel)
-            team_names = ', '.join([member.nick for member in team])
+            team_names = ', '.join([member.nick if member.nick else member.name for member in team])
             text_output += f'{voice_channel.name}:\n{team_names}\n\n'
 
         await ctx.send(text_output)
