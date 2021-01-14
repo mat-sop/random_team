@@ -19,14 +19,22 @@ You can also type $rng help category for more info on a category.
 
 ## Development/Hosting
 
-### Requirements
+### Docker
+`cp .env.example .env`
+Paste token into `.env`
+`docker build . -f Dockerfile -t random-team`
+`docker run -d random-team`
+
+### Without docker
+
+#### Requirements
 `Python 3.8.3`
 
-### Instalation
+#### Instalation
 ```bash
 python -m pip install -r requirements.txt
 ```
-### Run
+#### Run
 ```bash
 export DISCORD_BOT_TOKEN="paste token here"
 python random_team/bot.py
